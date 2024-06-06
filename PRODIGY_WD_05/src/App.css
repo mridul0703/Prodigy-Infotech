@@ -1,0 +1,35 @@
+/* General styles for all devices */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('./images/background1.png'); /* Replace with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ensure the background covers the full viewport height */
+  background-attachment: fixed; /* Ensure the background remains fixed during scrolling */
+}
+
+/* Adjust background properties for small screens */
+@media (max-width: 600px) {
+  body {
+    background-size: cover; /* Maintain cover property for small screens */
+    background-position: center top; /* Adjust position to focus more on the top part of the image */
+  }
+}
+
+/* Adjust background properties for medium screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    background-size: cover; /* Maintain cover property for medium screens */
+    background-position: center center; /* Center the background image */
+  }
+}
+
+/* Adjust background properties for large screens */
+@media (min-width: 1025px) {
+  body {
+    background-size: cover; /* Maintain cover property for large screens */
+    background-position: center center; /* Center the background image */
+  }
+}

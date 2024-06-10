@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(./bg.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+}
+
+.stopwatch {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#display {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background: #e0e0e0;
+    border-color: #bbb;
+}
+
+.laps {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.laps h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#lapsList {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#lapsList li {
+    background: #f9f9f9;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #333;
+    border: 1px solid #ccc;
+}
